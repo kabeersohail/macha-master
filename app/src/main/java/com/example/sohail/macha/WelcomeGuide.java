@@ -40,7 +40,9 @@ public class WelcomeGuide extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if(i==(textView.length)-1)
-                    startActivity(new Intent(WelcomeGuide.this,Wardrobe1.class));
+//                    startActivity(new Intent(WelcomeGuide.this,Wardrobe1.class));
+                    startActivity(new Intent(WelcomeGuide.this,ImagesActivity.class));
+
                 viewPager.setCurrentItem(currentpage + 1);
             }
         });

@@ -16,5 +16,8 @@
     <string name="googlesignin">Sign in with google</string>
     <string name="harem_pants">Harem Pants</string>
     <string name="dress">Dress</string>
-    <string name="rupee">₹</string>
+    <string name="rupee">₹799</string>
+    <string name="upload">Upload</string>
+    <string name="cart">cart</string>
+    <string name="ajio">AJIO</string>
 </resources>

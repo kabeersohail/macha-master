@@ -25,12 +25,31 @@
                 android:value=".InfiniteCycleViewPager"
                 />
 
+
+
         </activity>
         <activity android:name=".Wardrobe" />
         <activity android:name=".Image" />
         <activity android:name=".InfiniteCycleViewPager" />
+        <activity
+            android:name=".ImagesActivity"
+            android:screenOrientation="portrait">
+            <!--<meta-data-->
+                <!--android:name="android.support.PARENT_ACTIVITY"-->
+                <!--android:value=".Main3Activity" />-->
+        </activity>
         <activity android:name=".Wardrobe1">
         </activity>
+        <activity android:name=".ImageDetails">
+
+        </activity>
+
+        <activity
+            android:name=".Main4Activity"
+            android:screenOrientation="portrait">
+
+        </activity>
+
     </application>
 
 </manifest>

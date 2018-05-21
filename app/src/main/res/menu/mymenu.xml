@@ -4,6 +4,18 @@
     android:background="#2F4859">
 
     <item
+        android:icon="@drawable/cart"
+        android:id="@+id/cart"
+        android:title="@string/cart"
+        app:showAsAction="always"
+        />
+
+    <item
+        android:id="@+id/Upload"
+        android:title="@string/upload"
+        app:showAsAction="never" />
+
+    <item
         android:id="@+id/clothes"
         android:title="@string/clothes"
         app:showAsAction="never">
