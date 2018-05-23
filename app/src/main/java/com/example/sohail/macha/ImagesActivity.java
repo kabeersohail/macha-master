@@ -139,6 +139,7 @@ public class ImagesActivity extends AppCompatActivity implements ImageAdapter1.O
         int id = item.getItemId();
 
         if(id == R.id.signoutdrawar){
+            finish();
             AuthUI.getInstance().signOut(this);
             startActivity(new Intent(this,MainActivity.class));
         }
