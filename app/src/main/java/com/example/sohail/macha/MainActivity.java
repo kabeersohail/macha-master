@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
                 else
                 {
 //                    Toast.makeText(MainActivity.this,"Signed in",Toast.LENGTH_SHORT).show();
-                    startActivity(new Intent(MainActivity.this,InfiniteCycleViewPager.class));
+                    startActivity(new Intent(MainActivity.this,ImagesActivity.class));
                 }
             }
         };

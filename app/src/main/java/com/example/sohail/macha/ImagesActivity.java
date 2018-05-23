@@ -3,6 +3,7 @@ package com.example.sohail.macha;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
+import android.support.constraint.ConstraintLayout;
 import android.support.design.widget.NavigationView;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -14,6 +15,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ProgressBar;
+import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 import com.firebase.ui.auth.AuthUI;
@@ -154,13 +156,30 @@ public class ImagesActivity extends AppCompatActivity implements ImageAdapter1.O
         {
             return true;
         }
-        return super.onOptionsItemSelected(item);
+
+        int id = item.getItemId();
+
+        if(id == R.id.cart){
+//            Toast.makeText(this,"cart",Toast.LENGTH_SHORT).show();
+//            getLayoutInflater().inflate(R.layout.cartitem,null);
+            startActivity(new Intent(ImagesActivity.this,Cart.class));
+//            RelativeLayout layout = findViewById(R.id.relativelayout);
+//            View child = getLayoutInflater().inflate(R.layout.cartitem, null);
+//            layout.addView(child);
+        }
+
+//        return super.onOptionsItemSelected(item);
+        return true;
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.mymenu,menu);
+        inflater.inflate(R.menu.cart,menu);
         return super.onCreateOptionsMenu(menu);
     }
+
+
+
+
 }

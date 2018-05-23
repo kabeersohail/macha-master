@@ -8,6 +8,7 @@
     tools:context=".Wardrobe1">
 
     <RelativeLayout
+        android:id="@+id/relativelayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
